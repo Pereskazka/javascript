@@ -3,9 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Main Page Store</title>
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -19,14 +20,48 @@
                     <img src="img/search.svg" alt="">
                 </div>
                 <div class="link" style="justify-content: right;">
-                    <img src="img/list.svg" alt="">
-                    <img src="img/user.svg" alt="">
+                    <div class="dropdown">
+                        <span onclick="myFunction()" class="dropbtn"><img src="img/list.svg" alt=""></span>
+                    </div>
+                    <a href="registration.html"><img src="img/user.svg" alt=""></a>
                     <img src="img/sales.png" alt="">
                 </div>
             </div>
         </div>
     </div>
+
     <div class="first-screen">
+        <div id="myDropdown" class="dropdown-content">
+            <div style="right: 0;float: right;width: 15px; cursor: pointer;" onclick="myFunction()">
+                <img src="img/close.png" alt="">
+            </div>
+            <div class="menu-inline">
+                <span>MAN</span>
+                <ul>
+                    <li>Accessories</li>
+                    <li>Bags</li>
+                    <li>Denim</li>
+                    <li>T-Shirts</li>
+                </ul>
+                <span>WOMAN</span>
+                <ul>
+                    <li>Accessories</li>
+                    <li>Jackets & Coats</li>
+                    <li>Polos</li>
+                    <li>T-Shirts</li>
+                    <li>Shirts</li>
+                </ul>
+                <span>KIDS</span>
+                <ul>
+                    <li>Accessories</li>
+                    <li>Jackets & Coats</li>
+                    <li>Polos</li>
+                    <li>T-Shirts</li>
+                    <li>Shirts</li>
+                    <li>Bags</li>
+                </ul>
+            </div>
+        </div>
         <div class="container">
             <div class="information"></div>
             <div class="information" style="background-image: none;">
@@ -61,7 +96,11 @@
     <div class="content">
         <div class="container item-flex">
             <div class="item">
-                <img src="img/catalog/1.png" alt="">
+                <div class="fetured__item-wrp">
+                    <img src="img/catalog/1.png" alt="">
+                    <div class="fetured__item-overlay"></div>
+                    <button class="fetured__item-button">add to cart</button>
+                </div>
                 <div class="item-card">
                     <h1>ELLERY X M'O CAPSULE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis!</p>
@@ -69,7 +108,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/catalog/2.png" alt="">
+                <div class="fetured__item-wrp">
+                    <img src="img/catalog/2.png" alt="">
+                    <div class="fetured__item-overlay"></div>
+                    <button class="fetured__item-button">add to cart</button>
+                </div>
                 <div class="item-card">
                     <h1>ELLERY X M'O CAPSULE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis!</p>
@@ -77,7 +120,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/catalog/3.png" alt="">
+                <div class="fetured__item-wrp">
+                    <img src="img/catalog/3.png" alt="">
+                    <div class="fetured__item-overlay"></div>
+                    <button class="fetured__item-button">add to cart</button>
+                </div>
                 <div class="item-card">
                     <h1>ELLERY X M'O CAPSULE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis!</p>
@@ -85,7 +132,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/catalog/2.png" alt="">
+                <div class="fetured__item-wrp">
+                    <img src="img/catalog/1.png" alt="">
+                    <div class="fetured__item-overlay"></div>
+                    <button class="fetured__item-button">add to cart</button>
+                </div>
                 <div class="item-card">
                     <h1>ELLERY X M'O CAPSULE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis!</p>
@@ -93,7 +144,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/catalog/3.png" alt="">
+                <div class="fetured__item-wrp">
+                    <img src="img/catalog/2.png" alt="">
+                    <div class="fetured__item-overlay"></div>
+                    <button class="fetured__item-button">add to cart</button>
+                </div>
                 <div class="item-card">
                     <h1>ELLERY X M'O CAPSULE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis!</p>
@@ -101,7 +156,11 @@
                 </div>
             </div>
             <div class="item">
-                <img src="img/catalog/1.png" alt="">
+                <div class="fetured__item-wrp">
+                    <img src="img/catalog/3.png" alt="">
+                    <div class="fetured__item-overlay"></div>
+                    <button class="fetured__item-button">add to cart</button>
+                </div>
                 <div class="item-card">
                     <h1>ELLERY X M'O CAPSULE</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, debitis!</p>
@@ -114,28 +173,70 @@
     </div>
     <div class="map">
         <div class="container">
-            <div class="item-material card-women">
-                <p>30% OFF<br />
-                    <b>FOR WOMEN</b>
+            <div class="item-about">
+                <p>
+                    <img src="img/car.png" alt="">
+                <h1>Free Delivery</h1>
+                <span>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                    models.</span>
                 </p>
             </div>
-            <div class="item-material card-men">
-                <p>HOT DEAL<br />
-                    <b>FOR MEN</b>
+            <div class="item-about">
+                <p>
+                    <img src="img/discount.png" alt="">
+                <h1>Sales & discounts</h1>
+                <span>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                    models.</span>
                 </p>
             </div>
-            <div class="item-material card-kids">
-                <p>NEW ARRIVALS<br />
-                    <b>FOR KIDS</b>
+            <div class="item-about">
+                <p>
+                    <img src="img/corona.png" alt="">
+                <h1>Quality assurance</h1>
+                <span>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive
+                    models.</span>
                 </p>
             </div>
         </div>
     </div>
     <div class="subscribe">
-
+        <div class="container">
+            <div class="block-subscribe">
+                <img src="img/avatar.png" alt="">
+                <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p>
+            </div>
+            <div class="block-subscribe">
+                <h1>SUBSCRIBE</h1>
+                <span>FOR OUR NEWLETTER AND PROMOTION</span>
+                <br>
+                <section class="parallax-feature">
+                    <div class="starfield"></div>
+                    <i class="fa fa-paper-plane"></i>
+                    <div class="feature-input">
+                        <div id="subscribe">
+                            <input type="text" class="enteremail error" name="EMAIL" id="subscribe-email"
+                                placeholder="Enter your email address" spellcheck="false">
+                            <button type="submit" id="signup-button" class="signup-button">SUBSCRIBE</button>
+                            <label for="subscribe-email" class="subscribe-message error" style="">
+                                <i class="fa fa-warning"></i>
+                                <span class="message-content"></span>
+                            </label>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
     </div>
     <div class="footer">
-        <div class="container"></div>
+        <div class="container">
+            <div class="footer-blocks">© 2021 Brand All Rights Reserved.</div>
+            <div class="footer-blocks">
+                <img src="img/social/2.png" alt="">
+                <img src="img/social/4.png" alt="">
+                <img src="img/social/5.png" alt="">
+                <img src="img/social/6.png" alt="">
+            </div>
+        </div>
     </div>
 </body>
 
